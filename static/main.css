@@ -1,0 +1,20 @@
+.archive-post {
+    background-image: linear-gradient(#e5e5e5, #e0e0e0);
+	padding: 15px 15px 15px 15px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #ede1f7;
+}
+
+nav {
+    background-image: radial-gradient(#bebaff, #bcb7ff);
+}
+
+hr {
+    background-color: #dac9ea;
+}
+
+body {
+    background-image: radial-gradient(#c4c4c4, #dadff2);
+	background-repeat: repeat-y;
+}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} Register {% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h2 style="text-align: center">INTRODUCTION</h2><br>
+        <p class="about-page text-center">
+            This website serves as a personal archive, blog or diary of sorts.
+            Keep track of anything you want, from important events in your life that you
+            might want to revisit later, to thought provoking articles you've
+            come across. My suggestion is use it as a work journal to keep track of your
+            most productive days to motivate yourself to work harder towards your goals
+            in the future. Sign up to get started.
+        </p>
+    </div>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4 text-center">Create a new account.</legend>
+                {{ form | crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-success" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            Already have an account? <a href="{% url 'login' %}"><b>Log in</b></a> instead.
+        </div>
+    </div>
+{% endblock %}

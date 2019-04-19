@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} My Archive {% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="container archive-post">
+            <aside class="post-wrap post-white">
+                <h3 class="text-center"><u>{{ post.title }}</u></h3>
+                <h5>{{ post.content }}</h5>
+                <p class="text-muted text-right">
+                    <i>{{ post.date_created }}</i>
+                    <span style="float: left;">
+                        <a href="{% url 'delete_post' pk=post.pk %}" class="text-danger">Delete</a>
+                    </span>
+                </p>
+            </aside>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}
