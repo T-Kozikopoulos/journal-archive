@@ -1,7 +1,7 @@
 # journal-archive
 A personal archive/journal/blog site, made with Django and designed using Bootstrap.
 
-Make a dummy account and test out the page at personal-archive.herokuapp.com
+Make a dummy account and test out the page at [personal-archive.herokuapp.com](personal-archive.herokuapp.com).
 
 Website screenshots
 
